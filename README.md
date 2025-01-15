@@ -35,7 +35,7 @@ A React Native application built with Expo that allows users to view, navigate, 
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/pdf-viewer-app.git
-   cd pdf-viewer-app
+   cd pdfly
    ```
 
 2. Install dependencies:
