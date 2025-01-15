@@ -1,28 +1,54 @@
 {
   "expo": {
-    "name": "PDFly",
-    "slug": "PDFly",
+    "name": "PDFLY",
+    "slug": "pdfly",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      // "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.pdfly"
     },
     "android": {
+      "package": "com.yourcompany.pdfly",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "versionCode": 1
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/07aebfc9-bdfb-4c41-b720-63973c026569"
+    },
+    "plugins": [
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ]
+    ],
+    "owner": "akashkottil",
+    "extra": {
+      "eas": {
+        "projectId": "e5fccad8-0eea-4726-a378-737be6c9c8a2"
+      }
     }
   }
 }
